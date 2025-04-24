@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    font-family: 'Cascadia Code', monospace;
+    font-size: x-large;
+}
+
+p {
+    padding: 3px;
+    color: lightgreen;
+}
+h2{
+    color: white;
+    padding: 3px;
+    font-size: xx-large;
+}
+.skill{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;         /* Allows items to wrap */
+    text-align: center;      /* Centers inline text content */
+    width: fit-content;      /* Shrinks to fit content */
+    margin: 10px auto;          /* Horizontally center the container */
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgb(62, 59, 59);
+}
+.underline{
+    text-decoration: underline;
+
+}
+
+.skill:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+    .skill {
+        padding: 10px;
+        gap: 8px;
+        max-width: 95vw;
+        border-radius: 8px;
+    }
+
+    .skill img {
+        width: 45px;
+        height: 45px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
