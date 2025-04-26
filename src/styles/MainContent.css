@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-content{
+    width: 100%;
+    font-family: 'Cascadia Code', monospace;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #1a1a1f;
+}
+
+.heading{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+.projects {
+    display: flex;
+    flex-direction: column; /* if you have multiple project-cards stacked */
+    align-items: center;
+}
+
+.project-card {
+    display: flex;           /* make image + info side-by-side */
+    align-items: center;     /* center vertically */
+    background-color: #2d2d2d;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    width: 90%;
+    max-width: 800px;         /* limit width on large screens */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.project-image {
+    width: 250px;
+    aspect-ratio: 9 / 16;    /* container will be 250×(250×16/9)=~444px */
+    overflow: hidden;
+    border-radius: 10px;
+   
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;       /* fills the aspect-ratio box, may crop edges */
+  }
+  
+
+
+
+.project-info {
+    color: white;
+    flex: 1; /* take remaining space */
+}
+
+.title {
+    font-size: xxx-large;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: medium;
+    color: #cccccc;
+}
+.tech-stack{
+    color: gray;
+    font-size: medium;
+}
